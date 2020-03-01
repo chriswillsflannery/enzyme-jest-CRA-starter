@@ -1,12 +1,11 @@
 import React from 'react';
-import Logo from '../../assets/me.png';
 import './Header.scss';
 
 const Header = (props) => {
   return (
-    <header>
+    <header data-test="headerComponent">
       <div className="wrap">
-        <div className="logo">
+        <div data-test="logo">
           <h1>COMPANY</h1>
         </div>
       </div>
