@@ -4,12 +4,11 @@ import PropTypes from 'prop-types';
 class Headline extends React.Component {
 
   render() {
-    console.log(this.props);
     const { header, desc, tempArray } = this.props;
     if (!header) return null;
     return (
-      <div>
-        <h1>{header}</h1>
+      <div data-test="HeadlineComponent">
+        <h1 data-test="header">{header}</h1>
         <p>{desc}</p>
         <p>{tempArray[0].email}</p>
       </div>
