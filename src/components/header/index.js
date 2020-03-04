@@ -1,17 +1,17 @@
 import React from 'react';
+
 import './Header.scss';
 
-const Header = (props) => {
+const Header = ({ text }) => {
   return (
     <header data-test="headerComponent">
       <div className="wrap">
-        <div data-test="logo">
-          <h1>COMPANY</h1>
+        <div className="logo" data-test="logo">
+          <h1>{text}</h1>
         </div>
       </div>
     </header>
   )
-
 }
 
 export default Header;
