@@ -1,0 +1,27 @@
+header {
+  display: block;
+  height: 50px;
+  width: 100%;
+  padding: 0;
+  background: black;
+
+  .wrap {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 980px;
+
+    .logo {
+      display: block;
+      width: 120px;
+      position: absolute;
+      left: 200px;
+     
+      h1 {
+        color: whitesmoke;
+        margin: 10px 0 0 0;
+      }
+    }
+  }
+}
