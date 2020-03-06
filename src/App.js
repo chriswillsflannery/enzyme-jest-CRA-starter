@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.scss';
-import Header from './components/header/index.js';
-import Headline from './components/headline/index.js';
+import Header from './components/header/index';
+import Headline from './components/headline/index';
+import SharedButton from './components/button/index';
 
 const tempArr = [{
   fName: "Chris",
@@ -16,6 +17,7 @@ function App() {
     <div className="App">
       <Header text="Company" />
       <Headline header="string" desc="desc" tempArray={tempArr} />
+      <SharedButton buttonText="Shared Button" emitEvent={() => console.log('emitted')} />
     </div>
   );
 }
