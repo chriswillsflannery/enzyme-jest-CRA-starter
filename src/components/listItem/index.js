@@ -4,9 +4,16 @@ import PropTypes from 'prop-types';
 class ListItem extends React.Component {
 
   render() {
-    return (
-      <div>
+    const { title, desc } = this.props;
 
+    if (!title) {
+      return null;
+    }
+
+    return (
+      <div data-test="listItemComponent">
+        <h2 data-test="componentTitle">{title}</h2>
+        <p data-test="componentDescription">{desc}</p>
       </div>
     )
   }
