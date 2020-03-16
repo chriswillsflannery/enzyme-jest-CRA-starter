@@ -35,7 +35,7 @@ class App extends React.Component {
     const { posts } = this.props;
 
     return (
-      <div className="App">
+      <div className="App" data-test="appComponent">
         <Header text="Company" />
         <Headline header="string" desc="desc" tempArray={tempArr} />
         <SharedButton {...configButton} />
